@@ -7,7 +7,7 @@ const Settings = (props) =>{
 
     const [clases,setCalsses]=useState('settings');
 
-    console.log(props.settings);
+    
     useEffect(()=>{
         props.settings.start===true?
         setCalsses('none')
@@ -27,7 +27,7 @@ const Settings = (props) =>{
             <SettingsItem header={'Цвет еды:'} value={['#ffe600','#b914f5','#f52222']}/>
             
         </div>
-        //:null
+        
     )
 }
 

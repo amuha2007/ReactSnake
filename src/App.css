@@ -31,6 +31,8 @@ body{
   font-family: 'Russo One', sans-serif;
   letter-spacing: 3px;
   margin-bottom: 10px;
+  width: 350px;
+    text-align: center;
 }
 
 .text{
@@ -64,7 +66,7 @@ body{
     display: flex;
     flex-direction: column;
   }
-  
+
 .boardContainer {
     display: flex;
     flex-direction: column;

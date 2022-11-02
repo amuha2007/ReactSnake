@@ -64,20 +64,13 @@ const Board =(props)=>{
         }
     }
 
-    
-    
-    
-
     const handleKeyDown =(event)=>{
-        
-        console.log('hendleKeyDown');
         
         event.preventDefault();
         
         const index = AVALIBLE_MOVES.indexOf(event.key);
         if(index>-1){
-            console.log(AVALIBLE_MOVES[index], index);
-            console.log(direction);
+            
             if(AVALIBLE_MOVES[index]=='ArrowUp'&&direction=='ArrowDown'){
 
             }else if(AVALIBLE_MOVES[index]=='ArrowDown' && direction=='ArrowUp'){
@@ -85,7 +78,7 @@ const Board =(props)=>{
             }else if(AVALIBLE_MOVES[index]=='ArrowLeft' && direction=='ArrowRight'){
 
             }else if(AVALIBLE_MOVES[index]=='ArrowRight' && direction=='ArrowLeft'){
-                
+
             }else{
                 setDirection(AVALIBLE_MOVES[index]);
             }
@@ -156,7 +149,7 @@ const Board =(props)=>{
                 checkAvailableSlot(newSnake[newSnake.length-1][0]+move[0]),
                 checkAvailableSlot(newSnake[newSnake.length-1][1]+move[1])
             ];
-            // console.log(snake.length);
+            
             
             newSnake.push(head);
             let spliceIndex=1;
@@ -178,7 +171,6 @@ const Board =(props)=>{
             
             setSnake(newSnake.slice(spliceIndex));
         
-            //проверка на удар об саму себя змеи
             for(let i = 0 ;i<newSnake.length-1;i++){
                 
                 if(head[0]==newSnake[i][0]&&head[1]==newSnake[i][1]){

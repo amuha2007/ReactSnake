@@ -24,7 +24,7 @@ function App() {
       },[])
 
     document.querySelectorAll('.settingsItem').forEach(function(elem){
-      //тут проблема
+      
       elem.children[1].addEventListener('change', function(event){
         event.preventDefault()
 

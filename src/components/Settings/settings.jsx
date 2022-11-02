@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import SettingsItem from "../settingsItem/settingsItem";
+import cl from './settings.css';
 import { useState } from "react";
+
+
 const Settings = (props) =>{
 
     

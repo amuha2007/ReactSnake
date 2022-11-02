@@ -30,7 +30,7 @@ let foodStyles = {
 let squareStyles= {
     width: '15px',
     height: '15px',
-    backgroundColor: 'rgb(1, 1, 1)',
+    backgroundColor: 'rgb(12, 12, 12)',
     borderRadius: '4px',
     margin: '1px'
 }

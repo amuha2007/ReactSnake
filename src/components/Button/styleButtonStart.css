@@ -1,0 +1,12 @@
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: #3de03a;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 3px #3de03a;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
